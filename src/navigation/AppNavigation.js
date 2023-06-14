@@ -1,7 +1,7 @@
 import { Icon } from '@rneui/base';
 import { View, Text } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {login}from "../screens/LoginScreen";
+
 import {screen} from "../utils/screenName";
 const Tab=createBottomTabNavigator();
 export const AppNavigation=()=> {
@@ -17,8 +17,8 @@ export const AppNavigation=()=> {
     >
     <Tab.Screen
     name={screen.account.tab}
-    component={account}
-    options={{title: "LOGIN"}}
+    component={logintScreen}
+    options={{title: "CUENTA"}}
     />
     </Tab.Navigator>
   );
