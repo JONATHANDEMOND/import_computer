@@ -1,7 +1,7 @@
 import { Icon } from '@rneui/base';
 import { View, Text } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import WelcomeScreen from '../screens/WelcomeScreen';
+import {login}from "../screens/LoginScreen";
 import {screen} from "../utils/screenName";
 const Tab=createBottomTabNavigator();
 export const AppNavigation=()=> {
@@ -16,16 +16,16 @@ export const AppNavigation=()=> {
     })} 
     >
     <Tab.Screen
-    name={screen.welcome.tab}
-    component={WelcomeScreen}
-    options={{title: "BIENVENIDOS IMPORT-COMPUTER"}}
+    name={screen.account.tab}
+    component={account}
+    options={{title: "LOGIN"}}
     />
     </Tab.Navigator>
   );
 };
 const screenOptions = (route, color, size) => {
   let iconName;
-  if (route.name == screen.welcome.tab) {
+  if (route.name == screen.account.tab) {
     iconName = "compass-outline";
   }
   return (

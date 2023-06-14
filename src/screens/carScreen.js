@@ -3,7 +3,7 @@ import React from 'react'
 import {screen} from "../screens/../utils/screenName"
 import {Button} from '@rneui/themed'
 import { ListItem } from "@rneui/themed";
-const WelcomeScreen = () => {
+const login = () => {
   const products = [
     {
       name: "Mouse",

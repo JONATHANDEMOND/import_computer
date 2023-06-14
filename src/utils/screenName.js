@@ -1,8 +1,11 @@
-const WelcomeStack={
-    tab:"WelcomeTab",
-    welcome:"Welcome",
-    products: "Products",
+
+const accountStack = {
+    tab: "AccountTab",
+    account: "Account", //stack
+    login: "Login",
+    register: "Register",
+
 };
 export const screen={
-    welcome: WelcomeStack,
+    account: accountStack,
 };
