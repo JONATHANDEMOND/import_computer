@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import {screen} from "../screens/../utils/screenName"
+import {screen} from "../utils/screenName"
 import {Button} from '@rneui/themed'
 import { ListItem } from "@rneui/themed";
 const login = () => {
